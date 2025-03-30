@@ -66,8 +66,7 @@ cp .env.example .env
 4. Start the development server:
 bash
 npm run dev
-# or
-yarn start
+
 
 Tech Stack to Use:
 
