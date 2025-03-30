@@ -69,7 +69,30 @@ npm run dev
 # or
 yarn start
 
+Tech Stack to Use:
 
+React.js - As required in your assignment for the frontend framework
+
+You can use Create React App (CRA), Vite, or Next.js as the project starter
+
+
+State Management
+
+React Hooks (useState, useEffect, useContext) as mentioned in your requirements
+
+
+Styling Options (choose one)
+
+Tailwind CSS (recommended for rapid development and responsive design)
+Material UI (MUI)
+Chakra UI
+Styled Components
+
+
+API Integration
+
+Axios or Fetch API for making requests to OpenWeatherMap
+OpenWeatherMap API endpoints 
 
 ## 🔑 API Key Setup
 The app requires an OpenWeatherMap API key:
@@ -79,6 +102,33 @@ The app requires an OpenWeatherMap API key:
 env
 REACT_APP_OPENWEATHER_API_KEY=your_api_key_here
 
+Primary Endpoints
+
+Current Weather Data
+
+URL: https://api.openweathermap.org/data/2.5/weather?q={city}&appid={API_KEY}&units=metric
+Returns: Current temperature, humidity, wind speed, weather condition, etc.
+Rate Limits
+
+Free Plan Limitations:
+
+60 calls per minute (1,000 calls per day)
+Sufficient for development and small-scale deployment
+No credit card required
+
+
+Implementation Best Practices:
+
+Add debouncing to search inputs (300-500ms) to prevent excessive API calls
+Cache previous search results locally (localStorage)
+Display last searched city on app load to reduce API calls
+
+Error Handling
+
+Common HTTP Status Codes:
+
+401: Invalid API key
+404: City not found
 
 ## 📱 Responsive Design
 - Mobile-first approach
