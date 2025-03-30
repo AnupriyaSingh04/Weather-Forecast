@@ -1,6 +1,6 @@
 # 🌦 Weather Forecast - Your Personal Weather Assistant
 <div align="center">
-  <img src="./demo.gif" alt="Weather Forecast Banner" height="300" width="700" />
+  <img src="./demo.gif" alt="Weather Forecast Banner" height="300" width="500" />
 </div>
 
 ## 🌟 Overview
